@@ -10,5 +10,8 @@ int main()
 
     snprintf(buf, sizeof(buf) - 1, "%d-%d-%d", year, month, date);
     puts(buf);
+    snprintf(buf, 5, "%d-%d-%d", year, month, date);
+    puts(buf);
+
     return 0;
 }
