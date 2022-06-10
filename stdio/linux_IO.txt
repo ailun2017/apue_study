@@ -1,0 +1,22 @@
+1、系统IO包括：open,close,read,write,lseek
+stdio函数都是上面的函数实现的，如fopen由open实现。 
+文件描述符是整数，文件结构体指针数组的索引，优先使用当前可用范围内最小的那一个索引。
+
+open函数是一个变参函数。
+
+
+2、系统IO和标准Iode区别
+
+3、IO的效率问题
+
+4、文件共享
+
+5、原子操作
+
+6、重定向：dup,dup2
+
+7、同步：sync，fsync, fdatasync
+
+8、fcntl和ioctl
+
+9、/dev/fd/目录
