@@ -1,4 +1,4 @@
-CLFAGS = -g3
+CLFAGS = -g3 -Wall
 CC = gcc
 all : stdio_study
 stdio_study : stdio_study.c
