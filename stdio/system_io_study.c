@@ -154,11 +154,11 @@ void delete_line(char* filename , int linenum)
 		close(rd_fd);
 		return;
 	}
-	ftruncate(wr_fd, len_before_linenum+1);
+	ftruncate(wr_fd, len_before_linenum);
 	//printf("after trunc: %s", buff);
 	printf("len_before_linenum %d, pos %d\n", len_before_linenum, pos);
 	lseek(wr_fd, len_before_linenum, SEEK_SET);
-	len = pos + 1;
+	len = pos;
 	pos = 0;
 	while(len > 0)
 	{
