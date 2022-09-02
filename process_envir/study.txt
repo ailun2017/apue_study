@@ -17,6 +17,36 @@
 	练习：调用exit（）、_exit()\_Exit，对比会调用钩子函数吗？？
 	实验结果：调用exit，最后会逆序执行注册的函数，调用_exit和_Exit,最后不会执行注册的函数，return 0是可以的。
 
-3、命令行参树分析
+3、命令行参数分析
+getopt
+getopt_long
+解析./bin -t=1 --p=16
 
+4、环境变量
+KEY=VALUE
+通过export命令查看环境变量
+环境变量存放到extern char** environ
+函数：
+getenv()
+setenv()
+
+5、C程序的空间布局
+pmap命令
+
+6、库
+动态库
+静态库
+手工装载库:
+dlopen
+dlerror
+dlsym
+dlclose
+
+7 函数跳转
+goto语句：只能函数内跳转
+跨函数跳转：
+setjmp()
+longjmp()
+
+8、资源的获取和控制
 
