@@ -33,15 +33,24 @@
 5、用户权限及组权限
 	u+s
 	g+s
+	getuid
 
 6、解释器文件
 
 7、system()
 
+
 8、进程会计
 
 9、进程时间
+	times()
 
-10、守护进程
+10、守护进程（后台进程）
+	会话
+	终端
+	setsid()
+	getpgrp()
+	getpgid()
+	setpgid()
 
 11、系统日志
