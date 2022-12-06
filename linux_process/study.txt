@@ -52,5 +52,14 @@
 	getpgrp()
 	getpgid()
 	setpgid()
+	单实例守护进程：锁文件（/var/run/name.pid），守护进程可以保证只有一个
+	启动脚本文件：/etc/rc*...开机自动某个程序
 
 11、系统日志
+	syslogd来负责写系统日志
+	openlog()用于和syslogd连接
+	syslog()
+	closelog()
+
+
+
