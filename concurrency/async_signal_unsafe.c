@@ -27,7 +27,7 @@ int main(void)
             perror("getpwnam error");
         if (strcmp(ptr->pw_name, "jack") != 0)
         {
-            printf("return value error!, pw_name = %s\n", ptr->name);
+            printf("return value error!, pw_name = %s\n", ptr->pw_name);
         }
     }
     return 0;
