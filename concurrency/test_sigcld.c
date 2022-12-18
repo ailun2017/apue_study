@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.mh>
 #include <signal.h>
 #include <sys/types.h>
 #include <pwd.h>
@@ -11,7 +12,7 @@ static void sig_cld(int signo)
     pid_t pid;
     int status;
 
-    fprintf(2, "sigcld received\n");
+    fprintf(stdout, "sigcld received\n");
     if (signal(SIGCLD, sig_cld) == SIG_ERR)
     {
         perror("signal error");
@@ -21,7 +22,7 @@ static void sig_cld(int signo)
     {
         perror("wait error");
     }
-    fprintf(2, "pid = %d\n", pid);
+    fprintf(stdout, "pid = %d\n", pid);
 }
 
 int main()
